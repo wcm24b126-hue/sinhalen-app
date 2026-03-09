@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
 import { LogOut, Home, PieChart, Plus, CreditCard, Wallet, TrendingUp, TrendingDown, Building2, Smartphone, Zap, Droplets } from 'lucide-react';
 import { useLanguage } from '../lib/LanguageContext';
+import CryptoPayment from '../components/CryptoPayment';
 
 export default function Dashboard({ session }) {
     const [profile, setProfile] = useState(null);
@@ -191,9 +192,11 @@ export default function Dashboard({ session }) {
                     <div className="panel-header">
                         <h3>{t('yourAccounts')}</h3>
                     </div>
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }}>
+                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }} className="mb-6">
                         {t('accountComingSoon')}
                     </p>
+
+                    <CryptoPayment />
                 </div>
             </div>
         </div>
