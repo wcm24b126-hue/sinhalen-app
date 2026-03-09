@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { supabase } from './lib/supabase';
+import Landing from './pages/Landing';
 import Auth from './pages/Auth';
 import Dashboard from './pages/Dashboard';
 
@@ -24,7 +25,7 @@ function App() {
     }, []);
 
     if (loading) {
-        return <div className="auth-container"><div className="glass-panel">Loading...</div></div>;
+        return <div className="auth-container"><div className="glass-panel text-center">Loading...</div></div>;
     }
 
     return (
@@ -32,7 +33,7 @@ function App() {
             <Routes>
                 <Route
                     path="/"
-                    element={session ? <Navigate to="/dashboard" /> : <Navigate to="/auth" />}
+                    element={session ? <Navigate to="/dashboard" /> : <Landing />}
                 />
                 <Route
                     path="/auth"

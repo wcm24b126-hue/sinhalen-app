@@ -28,5 +28,16 @@ export default {
     language: 'Language',
     uncategorized: 'Uncategorized',
     transaction: 'Transaction',
-    lkrInputHelper: 'Amounts are in LKR (Rs.)'
+    lkrInputHelper: 'Amounts are in LKR (Rs.)',
+    // Landing Page
+    heroTitle: 'Master Your Money, Effortlessly',
+    heroSubtitle: 'The ultimate financial platform tailored for Sri Lankans to track income, control expenses, and grow real wealth.',
+    getStartedBtn: 'Get Started Now',
+    loginBtn: 'Login to Account',
+    feature1Title: 'Simple & Fast',
+    feature1Desc: 'Log your daily expenses in seconds and get real-time insights into your spending habits.',
+    feature2Title: 'Local Categories',
+    feature2Desc: 'Pre-configured categories for utility bills, local transport, and daily life in Sri Lanka.',
+    feature3Title: '100% Secure',
+    feature3Desc: 'Your personal data is encrypted and protected by world-class security infrastructure.'
 };
